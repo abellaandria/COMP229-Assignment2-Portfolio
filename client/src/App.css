@@ -1,0 +1,966 @@
+/* =========================================================
+   ANDRIA ABELLA - PORTFOLIO
+   Pink + Lavender Theme
+   ========================================================= */
+
+/* ---------- Navigation Bar ---------- */
+
+nav {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  box-shadow: 0 2px 12px rgba(124, 106, 166, 0.12);
+}
+
+/* AA Logo */
+nav > div:first-child a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #d98fa8, #8b75b8);
+  color: white;
+  border-radius: 50%;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 12px rgba(139, 117, 184, 0.25);
+}
+
+/* Navigation Links */
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+nav > div:last-child a {
+  color: #4a4352;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav > div:last-child a:hover {
+  color: #b96f91;
+}
+
+/* ---------- Main Page Content ---------- */
+
+body > #root > div,
+#root > div {
+  width: 100%;
+}
+
+#root > div:not(nav) {
+  padding: 60px 8%;
+}
+
+h1 {
+  font-size: 42px;
+  color: #8069a8;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4a4352;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: #5d5664;
+}
+
+/* ---------- Forms ---------- */
+
+form {
+  max-width: 650px;
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.12);
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #4a4352;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d9cfe8;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fffafd;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+button {
+  background: linear-gradient(135deg, #d98fa8, #8b75b8);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(139, 117, 184, 0.25);
+}
+
+/* ---------- Responsive Navigation ---------- */
+
+@media (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav > div:last-child {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+}
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+.home-page {
+  min-height: calc(100vh - 91px);
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background: linear-gradient(
+    135deg,
+    #fff3f7 0%,
+    #f8f2fc 50%,
+    #f1eafb 100%
+  );
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 700px;
+}
+
+.hero-intro {
+  color: #c47d9d;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  color: #8069a8;
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.hero-content h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #4a4352;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* ---------- Home Page Buttons ---------- */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #d98fa8, #8b75b8);
+  color: white;
+  box-shadow: 0 4px 12px rgba(139, 117, 184, 0.2);
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(139, 117, 184, 0.3);
+}
+
+.secondary-button {
+  border: 2px solid #a17fbd;
+  color: #8069a8;
+  background-color: white;
+}
+
+.secondary-button:hover {
+  background-color: #f1eafb;
+  color: #8069a8;
+}
+
+/* ---------- Profile Photo ---------- */
+
+.hero-image {
+  flex: 0 0 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow:
+    0 10px 30px rgba(139, 117, 184, 0.22),
+    0 0 0 5px #eadcf4;
+  display: block;
+}
+
+/* ---------- Mission Statement ---------- */
+
+.mission-statement {
+  max-width: 650px;
+  padding: 15px 18px;
+  border-left: 4px solid #d98fa8;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #5d5664;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 0 10px 10px 0;
+}
+
+.mission-statement strong {
+  color: #8069a8;
+}
+
+/* ---------- Home Page Mobile ---------- */
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    flex-basis: auto;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .mission-statement {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+/* =========================================================
+   ABOUT ME PAGE
+   ========================================================= */
+
+.about-page {
+  min-height: calc(100vh - 91px);
+  padding: 70px 8%;
+  background: linear-gradient(135deg, #f7f1fc, #fff4f8);
+}
+
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-label {
+  color: #c47d9d;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.about-section > h1 {
+  font-size: 45px;
+  color: #8069a8;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* ---------- About Text ---------- */
+
+.about-text {
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.1);
+}
+
+.about-text h2 {
+  color: #8069a8;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* ---------- Skills Card ---------- */
+
+.skills-card {
+  background: linear-gradient(145deg, #8b75b8, #c787a5);
+  color: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 7px 20px rgba(139, 117, 184, 0.2);
+}
+
+.skills-card h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.skills-card h3 {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.skills-card ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.skills-card li {
+  margin-bottom: 8px;
+  color: white;
+}
+
+/* ---------- About Page Responsive ---------- */
+
+@media (max-width: 850px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section > h1 {
+    font-size: 38px;
+  }
+}
+
+/* ---------- Resume Button ---------- */
+
+.resume-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #d98fa8, #8b75b8);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.resume-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 117, 184, 0.25);
+}
+
+/* =========================================================
+   PROJECTS PAGE
+   ========================================================= */
+
+.projects-page {
+  min-height: calc(100vh - 91px);
+  padding: 70px 8%;
+  background: linear-gradient(135deg, #fff4f8, #f5effb);
+}
+
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-section > h1 {
+  font-size: 45px;
+  color: #8069a8;
+  margin-bottom: 10px;
+}
+
+.projects-intro {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ---------- Project Cards ---------- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 20px;
+  border-radius: 16px;
+  border-top: 4px solid #e2b1c4;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.1);
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(139, 117, 184, 0.18);
+}
+
+/* ---------- Project Images ---------- */
+
+.project-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+/* ---------- Project Number ---------- */
+
+.project-number {
+  color: #c47d9d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ---------- Project Title ---------- */
+
+.project-card h2 {
+  color: #8069a8;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ---------- Project Description ---------- */
+
+.project-card p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ---------- Project Details ---------- */
+
+.project-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eadfed;
+}
+
+.project-details strong {
+  color: #4a4352;
+}
+
+/* ---------- Technology Labels ---------- */
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.project-tech span {
+  background-color: #f2eafb;
+  color: #8069a8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ---------- Image Credits ---------- */
+
+.image-credits {
+  margin-top: 35px;
+  padding: 15px 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.image-credits p {
+  margin: 0;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+}
+
+.image-credits strong {
+  color: #8069a8;
+}
+
+/* ---------- Projects Responsive Design ---------- */
+
+@media (max-width: 950px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section > h1 {
+    font-size: 38px;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 50px 5%;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+}
+
+/* =========================================================
+   EDUCATION PAGE
+   ========================================================= */
+
+.education-page {
+  min-height: calc(100vh - 91px);
+  padding: 70px 8%;
+  background: linear-gradient(135deg, #f5effb, #fff4f8);
+}
+
+.education-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-section > h1 {
+  font-size: 45px;
+  color: #8069a8;
+  margin-bottom: 10px;
+}
+
+.education-intro {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ---------- Education Cards ---------- */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.education-card {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 35px;
+  border-radius: 16px;
+  border-top: 4px solid #b9a5d5;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.1);
+  transition: 0.3s;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(139, 117, 184, 0.18);
+}
+
+.education-year {
+  display: inline-block;
+  background-color: #f9e7ef;
+  color: #b96f91;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.education-card h2 {
+  color: #8069a8;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.education-card h3 {
+  color: #5d5664;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.education-details {
+  padding: 18px 0;
+  margin-bottom: 18px;
+  border-top: 1px solid #eadfed;
+  border-bottom: 1px solid #eadfed;
+}
+
+.education-details p {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/* ---------- Education Skill Labels ---------- */
+
+.education-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.education-skills span {
+  background-color: #f2eafb;
+  color: #8069a8;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* ---------- Education Responsive ---------- */
+
+@media (max-width: 850px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-section > h1 {
+    font-size: 38px;
+  }
+}
+
+/* =========================================================
+   SERVICES PAGE
+   ========================================================= */
+
+.services-page {
+  min-height: calc(100vh - 91px);
+  padding: 70px 8%;
+  background: linear-gradient(135deg, #fff4f8, #f5effb);
+}
+
+.services-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-section > h1 {
+  font-size: 45px;
+  color: #8069a8;
+  margin-bottom: 10px;
+}
+
+.services-intro {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ---------- Services Grid ---------- */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* ---------- Service Cards ---------- */
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 30px;
+  border-radius: 16px;
+  border-top: 4px solid #e2b1c4;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.1);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(139, 117, 184, 0.18);
+}
+
+.service-number {
+  color: #c47d9d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.service-card h2 {
+  color: #8069a8;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ---------- Services Responsive ---------- */
+
+@media (max-width: 950px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section > h1 {
+    font-size: 38px;
+  }
+}
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+.contact-page {
+  min-height: calc(100vh - 91px);
+  padding: 70px 8%;
+  background: linear-gradient(135deg, #f5effb, #fff4f8);
+}
+
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section > h1 {
+  font-size: 45px;
+  color: #8069a8;
+  margin-bottom: 10px;
+}
+
+.contact-intro {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* ---------- Contact Layout ---------- */
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 35px;
+  align-items: start;
+}
+
+/* ---------- Contact Information ---------- */
+
+.contact-info {
+  background: linear-gradient(145deg, #8b75b8, #c787a5);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 7px 20px rgba(139, 117, 184, 0.2);
+}
+
+.contact-info h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact-info > p {
+  color: #fff4fa;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-detail {
+  margin-bottom: 25px;
+}
+
+.contact-detail h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.contact-detail p {
+  color: #fff4fa;
+  margin-bottom: 0;
+}
+
+/* ---------- Contact Form ---------- */
+
+.contact-form {
+  max-width: none;
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(124, 106, 166, 0.1);
+}
+
+.contact-form h2 {
+  color: #8069a8;
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b89bd0;
+  box-shadow: 0 0 0 3px rgba(185, 155, 208, 0.15);
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* ---------- Contact Responsive ---------- */
+
+@media (max-width: 850px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section > h1 {
+    font-size: 38px;
+  }
+}
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+.success-message {
+  background-color: #f7ecf5;
+  border-left: 5px solid #c47d9d;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 10px rgba(124, 106, 166, 0.1);
+}
+
+.success-message strong {
+  display: block;
+  color: #8069a8;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.success-message p {
+  color: #5d5664;
+  margin: 0;
+  font-size: 15px;
+}
